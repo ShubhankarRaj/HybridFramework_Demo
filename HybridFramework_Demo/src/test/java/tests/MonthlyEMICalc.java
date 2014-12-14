@@ -20,8 +20,8 @@ public class MonthlyEMICalc {
 			System.out.println("The Text is displayed");
 		}
 		Assert.assertEquals(true, pageTitle.isDisplayed());
-		
-		
+		System.out.println("I have pushed the code to GITHUB");
+		 
 		driver.close();
 		
 

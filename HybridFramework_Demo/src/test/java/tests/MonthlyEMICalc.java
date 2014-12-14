@@ -17,14 +17,21 @@ public class MonthlyEMICalc {
 		
 		WebElement pageTitle = driver.findElement(By.xpath("//*[@id='mort-location']"));
 		if(pageTitle.isDisplayed()){
-			System.out.println("The Text is displayed");		}
+			System.out.println("The Text is displayed");
+		}
 		Assert.assertEquals(true, pageTitle.isDisplayed());
 		System.out.println("I have pushed the code to GITHUB");
-		System.out.println("Lets see if it gets pulled");		
+		System.out.println("Lets see if it gets pulled");
+		
 		System.out.println("Demonstrating the commit");
 		System.out.println("testing commit");
-		System.out.println("final fetch");
-		driver.close();	
-		}
+		System.out.println("Swapnil - testing commit");
+		driver.close();
+		
+		System.out.println("This is the seventh COMMIT");
+		System.out.println("Now this is Eigth Commit");
+		System.out.println("Ratnesh commented");
+	}
 
 }
+		

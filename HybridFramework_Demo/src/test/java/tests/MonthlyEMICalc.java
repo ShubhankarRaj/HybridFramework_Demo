@@ -30,6 +30,7 @@ public class MonthlyEMICalc {
 		
 		System.out.println("This is the seventh COMMIT");
 		System.out.println("Now this is Eigth Commit");
+		System.out.println("Swapnil - This is tenth commit");
 	}
 
 }

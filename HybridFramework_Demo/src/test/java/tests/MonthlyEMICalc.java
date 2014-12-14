@@ -25,9 +25,8 @@ public class MonthlyEMICalc {
 		 
 		System.out.println("Demonstrating the commit");
 		driver.close();
-		
 		System.out.println("This is the seventh COMMIT");
-
+		System.out.println("Now this is Eigth Commit");
 	}
 
 }

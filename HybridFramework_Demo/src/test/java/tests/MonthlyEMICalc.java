@@ -22,11 +22,9 @@ public class MonthlyEMICalc {
 		Assert.assertEquals(true, pageTitle.isDisplayed());
 		System.out.println("I have pushed the code to GITHUB");
 		System.out.println("Lets see if it gets pulled");
-		 
-		
 		System.out.println("Demonstrating the commit");
 		System.out.println("Now the slave is submiting the CODE");
-		
+		System.out.println("Even I will commit :) - Swapnil ");
 		
 		driver.close();
 		

@@ -24,6 +24,7 @@ public class MonthlyEMICalc {
 		System.out.println("Lets see if it gets pulled");
 		 
 		System.out.println("Demonstrating the commit");
+		System.out.println("Now the slave is submiting the CODE");
 		driver.close();
 		
 

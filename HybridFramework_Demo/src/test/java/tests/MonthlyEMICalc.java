@@ -22,6 +22,7 @@ public class MonthlyEMICalc {
 		Assert.assertEquals(true, pageTitle.isDisplayed());
 		System.out.println("I have pushed the code to GITHUB");
 		 
+		
 		driver.close();
 		
 

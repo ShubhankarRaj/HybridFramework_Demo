@@ -1,4 +1,4 @@
-package tests;
+package testCases;
 import java.util.concurrent.TimeUnit;
 
 import junit.framework.Assert;

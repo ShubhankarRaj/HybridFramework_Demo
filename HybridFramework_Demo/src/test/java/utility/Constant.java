@@ -14,7 +14,10 @@ public class Constant {
 	public static final int Col_MaxBudget = 5;
 	public static final int Col_Address = 6;
 	public static final int Col_MinBedRoom = 7;
-	public static final int Col_MaxBedRoom = 8;
-//	public static final int 
-//	public static final int 
+	public static final int Col_MaxBedRoom = 8; 
+	public static final int Col_HomePrice = 9;
+	public static final int Col_MortgageIntRate = 10;
+	public static final int Col_MortgagePayOffDur = 11;
+	public static final int Col_MonthlyRent = 12;
+	public static final String Path_ScreenShot = "//src//test//resources//Screenshots//";
 }

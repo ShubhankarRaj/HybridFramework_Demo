@@ -15,6 +15,6 @@ public class Constant {
 	public static final int Col_Address = 6;
 	public static final int Col_MinBedRoom = 7;
 	public static final int Col_MaxBedRoom = 8;
-	public static final int 
-	public static final int 
+//	public static final int 
+//	public static final int 
 }

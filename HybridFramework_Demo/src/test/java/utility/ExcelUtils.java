@@ -17,6 +17,7 @@ public class ExcelUtils {
 		XSSFWorkbook hwb = new XSSFWorkbook(fis);
 		XSSFSheet sht =  hwb.getSheet(shtName);
 		XSSFCell cell =  sht.getRow(row).getCell(col);
-		System.out.println(cell.toString());		
+		System.out.println(cell.toString());	
+		// need to add few more line for catch.
 	}
 }

@@ -46,9 +46,9 @@ public class ExcelUtils {
 //	}
 	public void getfile(int row, int col, String shtName) throws Exception{
 		String file=null;
-		FileInputStream fis=null;
+		FileInputStream fis = null;
 		XSSFCell cell = null;
-		XSSFSheet sht=null;
+		XSSFSheet sht = null;
 		try {
 			file = ClassLoader.getSystemResource("testData/"+Constant.File_TestData).getFile();
 			File fil = new File(file);

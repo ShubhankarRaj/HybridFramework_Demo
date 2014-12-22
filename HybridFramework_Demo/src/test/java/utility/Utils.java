@@ -68,8 +68,7 @@ public class Utils {
 			Log.info("Implicit wait applied on the Safari Driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully in SAFARI.");
-			break;
-		
+			break;		
 		}
 
 		{

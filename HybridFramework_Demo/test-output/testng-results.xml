@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1005" started-at="2014-12-17T05:34:57Z" finished-at="2014-12-17T05:34:58Z">
+  <suite name="Default suite" duration-ms="1592" started-at="2014-12-22T07:01:58Z" finished-at="2014-12-22T07:02:00Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1005" started-at="2014-12-17T05:34:57Z" finished-at="2014-12-17T05:34:58Z">
+    <test name="Default test" duration-ms="1592" started-at="2014-12-22T07:01:58Z" finished-at="2014-12-22T07:02:00Z">
       <class name="testCases.MonthlyEMICalc">
-        <test-method status="PASS" signature="testapp()[pri:0, instance:testCases.MonthlyEMICalc@1d73ff5]" name="testapp" duration-ms="991" started-at="2014-12-17T11:04:57Z" finished-at="2014-12-17T11:04:58Z">
+        <test-method status="PASS" signature="testapp()[pri:0, instance:testCases.MonthlyEMICalc@1c77f54]" name="testapp" duration-ms="1545" started-at="2014-12-22T12:31:58Z" finished-at="2014-12-22T12:32:00Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testapp -->

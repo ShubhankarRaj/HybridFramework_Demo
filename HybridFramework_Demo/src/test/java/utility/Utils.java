@@ -21,30 +21,32 @@ public class Utils {
 	public static WebDriver OpenBrowser(int iTestCaseRow){
 		String sBrowserName;
 		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
-		if(sBrowserName.equals("mozilla")){
-
+		switch(sBrowserName)
+		{
+		case "mozilla":
 			driver = new FirefoxDriver();
 			Log.info("New Firefox driver initiated");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			Log.info("Implicit wait applied on the driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully");
-		}
-		else if(sBrowserName.equals("iExplorer")){
+		
+		case "iExplorer":
 			driver = new InternetExplorerDriver();
-			Log.info("New Firefox driver initiated");
+			Log.info("New Internet Explorer initiated");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			Log.info("Implicit wait applied on the driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully");
-		}
-		else if(sBrowserName.equals("chrome")){
+		
+		case "chrome":
 			driver = new ChromeDriver();
 			Log.info("New Chrome driver initiated");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			Log.info("Implicit wait applied on the Chrome Driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully in CHROME.");
+		
 		}
 
 		{

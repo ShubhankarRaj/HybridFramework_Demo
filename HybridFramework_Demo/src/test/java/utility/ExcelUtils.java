@@ -21,6 +21,7 @@ public class ExcelUtils {
 		Log.info("Excel Sheet opened!!");
 		return CellData;
 	}
+	
 	public void getfile(int row, int col, String shtName) throws Exception{
 
 		String file = ClassLoader.getSystemResource("testData/"+Constant.File_TestData).getFile();

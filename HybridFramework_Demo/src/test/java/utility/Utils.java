@@ -13,6 +13,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.ie.InternetExplorerDriver;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.safari.SafariDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -23,6 +24,16 @@ public class Utils {
 		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
 		switch(sBrowserName)
 		{
+		default:
+
+			driver = new FirefoxDriver();
+			Log.info("New Firefox driver initiated");
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			Log.info("Implicit wait applied on the driver for 20 seconds");
+			driver.get(Constant.URL);
+			Log.info("Web Application launched successfully");
+			break;
+
 		case "mozilla":
 			driver = new FirefoxDriver();
 			Log.info("New Firefox driver initiated");
@@ -30,6 +41,7 @@ public class Utils {
 			Log.info("Implicit wait applied on the driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully");
+			break;
 		
 		case "iExplorer":
 			driver = new InternetExplorerDriver();
@@ -38,6 +50,7 @@ public class Utils {
 			Log.info("Implicit wait applied on the driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully");
+			break;
 		
 		case "chrome":
 			driver = new ChromeDriver();
@@ -46,6 +59,16 @@ public class Utils {
 			Log.info("Implicit wait applied on the Chrome Driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully in CHROME.");
+			break;
+			
+		case "safari":
+			driver = new SafariDriver();
+			Log.info("New Chrome driver initiated");
+			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
+			Log.info("Implicit wait applied on the Safari Driver for 20 seconds");
+			driver.get(Constant.URL);
+			Log.info("Web Application launched successfully in SAFARI.");
+			break;
 		
 		}
 

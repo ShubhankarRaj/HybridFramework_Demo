@@ -19,5 +19,7 @@ public class Constant {
 	public static final int Col_MortgageIntRate = 10;
 	public static final int Col_MortgagePayOffDur = 11;
 	public static final int Col_MonthlyRent = 12;
+	public static final int Col_HomeLocation = 13;
+	public static final int Col_DownPayment = 14;
 	public static final String Path_ScreenShot = "//src//test//resources//Screenshots//";
 }

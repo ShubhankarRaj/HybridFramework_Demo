@@ -14,13 +14,15 @@ public class ExcelUtils {
 	private static XSSFWorkbook ExcelWBook;
 	private static XSSFCell Cell;
 	private static XSSFRow Row;
+	private static XSSFSheet sht = null;
 	
-	public static String getCellData(int RowNum, int ColNum){
-		Cell = ExcelWSheet.getRow(RowNum).getCell(ColNum);
+	public static String getCellData(int RowNum, int ColNum, String shtName) throws Exception{
+		ExcelUtils.getfile(RowNum, ColNum, shtName);
+		Cell = sht.getRow(RowNum).getCell(ColNum);
 		String CellData = Cell.getStringCellValue();
 		Log.info("Excel Sheet opened!!");
 		return CellData;
-	}
+	}	
 //	private static XSSFSheet ExcelWSheet;
 //	private static XSSFWorkbook ExcelWBook;
 //	private static XSSFCell Cell;
@@ -44,11 +46,11 @@ public class ExcelUtils {
 //		System.out.println(cell.toString());	
 //		// need to add few more line for catch.
 //	}
-	public void getfile(int row, int col, String shtName) throws Exception{
+	public static void getfile(int row, int col, String shtName) throws Exception{
 		String file=null;
 		FileInputStream fis = null;
 		XSSFCell cell = null;
-		XSSFSheet sht = null;
+		
 		try {
 			file = ClassLoader.getSystemResource("testData/"+Constant.File_TestData).getFile();
 			File fil = new File(file);

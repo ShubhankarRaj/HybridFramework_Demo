@@ -15,12 +15,14 @@ public class BuyPage_Action {
 			BuyPage.txt_Buy_FromAmount().clear();
 			BuyPage.txt_Buy_FromAmount().sendKeys("200");
 			BuyPage.txt_Buy_ToAmount().clear();
-			BuyPage.txt_Buy_ToAmount().sendKeys("2000");
+			BuyPage.txt_Buy_ToAmount().sendKeys("200000");
 			BuyPage.list_Buy_Beds("2+ Beds");
 			BuyPage.list_Buy_Baths("2+ Baths");
 			BuyPage.btn_Buy_Search().click();
 			BuyPage.sSearchCount = BuyPage.txt_Buy_NextPageSearchResult().getText();
+			String[] strActual = BuyPage.sSearchCount.split("properties found");
+			String actual = strActual[0].trim();
 			Thread.sleep(5000);
-			Assert.assertEquals("5,748", BuyPage.sSearchCount);			
+			Assert.assertEquals("5,748", actual);			
 		}
 }

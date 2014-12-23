@@ -23,6 +23,7 @@ public class BuyPage_Action {
 			String[] strActual = BuyPage.sSearchCount.split("properties found");
 			String actual = strActual[0].trim();
 			Thread.sleep(5000);
-			Assert.assertEquals("5,748", actual);			
+			Assert.assertEquals("5,748", actual);
+			//  test
 		}
 }

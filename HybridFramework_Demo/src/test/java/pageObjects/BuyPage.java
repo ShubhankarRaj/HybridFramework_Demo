@@ -13,7 +13,7 @@ public class BuyPage extends BaseClass {
 	//public static WebDriver driver = null;
 	private static WebElement element;
 //	public static String sLocation;
-//	public static String sSearchCount;
+	public static String sSearchCount;
 	 public BuyPage(WebDriver driver){		 
 		 super(driver);
 	 }

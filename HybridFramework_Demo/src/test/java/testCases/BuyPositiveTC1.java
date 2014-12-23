@@ -14,7 +14,7 @@ import utility.Utils;
 public class BuyPositiveTC1 {
 	public WebDriver driver;
 	@BeforeMethod
-	public void beforeMethod(){
+	public void beforeMethod() throws Exception{
 		Log.info("In Before method.");
 		Log.info("Executing first test - BuyPositiveTC1");
 		driver = Utils.OpenBrowser(1);

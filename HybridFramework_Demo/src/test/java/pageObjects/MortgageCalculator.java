@@ -23,34 +23,30 @@ public class MortgageCalculator extends BaseClass{
 			throw(e);
 		}
 		return element;
-			}
+	}
 	public static WebElement EnterHomePrice()
 	{
 		try{
 			element = driver.findElement(By.id("mort-home-price"));
-		Log.info("HomePrice text box is found on the Mortgage Calculator Page");
+			Log.info("HomePrice text box is found on the Mortgage Calculator Page");
 		}
 		catch(Exception e){
 			Log.error("HomePrice text box is not found on the Mortgage Calculator Page");
 			throw(e);
 		}
 		return element;
-		//	HomePrice.clear();
-		//	HomePrice.sendKeys("60000");
 	}
 	public static WebElement EnterDownPayment()
 	{
 		try{
 			element = driver.findElement(By.id("mort-downpay-dollar"));
-		Log.info("Downpayment text box is found on the Mortgage Calculator Page");
+			Log.info("Downpayment text box is found on the Mortgage Calculator Page");
 		}
 		catch(Exception e){
 			Log.error("Downpayment text box is not found on the Mortgage Calculator Page");
 			throw(e);
 		}
 		return element;
-		//		DownPayment.clear();
-		//		DownPayment.sendKeys("10000");
 	}
 	public static WebElement EnterInterestRate()
 	{
@@ -63,8 +59,6 @@ public class MortgageCalculator extends BaseClass{
 			throw(e);
 		}
 		return element;
-		//		InterestRate.clear();
-		//		InterestRate.sendKeys("12");
 	}
 }
 

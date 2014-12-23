@@ -3,11 +3,12 @@
 <suite name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="testCases.MonthlyEMICalc">
+      <class name="testCases.BuyPositiveTC1">
         <methods>
-          <include name="testapp"/>
+          <include name="beforeMethod"/>
+          <include name="mainTest"/>
         </methods>
-      </class> <!-- testCases.MonthlyEMICalc -->
+      </class> <!-- testCases.BuyPositiveTC1 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

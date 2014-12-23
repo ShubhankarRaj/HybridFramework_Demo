@@ -19,9 +19,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class Utils {
 	public static WebDriver driver = null;
-	public static WebDriver OpenBrowser(int iTestCaseRow){
+	public static WebDriver OpenBrowser(int iTestCaseRow) throws Exception{
 		String sBrowserName;
-		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser);
+		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser, "Sheet1");
+		
 		switch(sBrowserName)
 		{
 		default:

@@ -3,8 +3,7 @@ package utility;
 public class Constant {
 	public static final String URL="http://www.realtor.com/?source=web";
 	public static final String Path_TestData = "//src//test//resources//testData//";
-	public static final String File_TestData = "TestData.xlsx";
-	
+	public static final String File_TestData = "TestData.xlsx";	
 	// Test Data sheet columns
 	public static final int Col_TestCaseName = 0;
 	public static final int Col_Browser = 1;

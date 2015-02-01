@@ -12,6 +12,7 @@ public class MortgageBuyorRent extends BaseClass{
 	public MortgageBuyorRent(WebDriver driver){
 		super(driver);
 	}
+	//This is just TEST line.
 	public static WebElement txtbx_Location() throws Exception{
 		try{
 			element = driver.findElement(By.xpath(".//*[@id='location']"));
@@ -102,6 +103,7 @@ public class MortgageBuyorRent extends BaseClass{
 		}
 		return element;
 	}
+	
 	public static WebElement lbl_RentYearTotal() throws Exception{
 		try{
 			element = driver.findElement(By.xpath(".//*[@id='ThisYearTotal_rent']"));

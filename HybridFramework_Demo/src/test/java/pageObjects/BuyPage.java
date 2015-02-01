@@ -23,8 +23,7 @@ public class BuyPage extends BaseClass {
 		 Thread.sleep(5000);
 		 WebElement element =  driver.findElement(By.id("Location"));	
 		 return element;
-//		 elem.click();
-//		
+//		 elem.click();	
 //		 //Location
 //		 WebElement loc = driver.findElement(By.id("Location"));
 //		 loc.clear();
@@ -69,6 +68,12 @@ public class BuyPage extends BaseClass {
 	public static WebElement txt_Buy_NextPageSearchResult() throws InterruptedException{
 		 element = null;
 		 WebElement element =  driver.findElement(By.className("property-title"));		 
+		 //WebElement element =  driver.findElement(By.cssSelector(".nav-main-navitems > li:nth-child(1) > a:nth-child(1)"));
+		 return element;
+	}
+	public static WebElement btn_Buy_DialogContinueButton() throws InterruptedException{
+		 element = null;
+		 WebElement element =  driver.findElement(By.className("i-magnifier-extra-large"));		 
 		 //WebElement element =  driver.findElement(By.cssSelector(".nav-main-navitems > li:nth-child(1) > a:nth-child(1)"));
 		 return element;
 	}

@@ -21,21 +21,22 @@ public class Utils {
 	public static WebDriver driver = null;
 	public static WebDriver OpenBrowser(int iTestCaseRow) throws Exception{
 		String sBrowserName;
+		String Name;
 		sBrowserName = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_Browser, "Sheet1");
-		
+//	Name = ExcelUtils.getCellData(iTestCaseRow, 14, "Sheet1");
 		switch(sBrowserName)
 		{
 		default:
 
 			driver = new FirefoxDriver();
-			Log.info("New Firefox driver initiated");
+			Log.info("this is default driver initiated");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 			Log.info("Implicit wait applied on the driver for 20 seconds");
 			driver.get(Constant.URL);
 			Log.info("Web Application launched successfully");
 			break;
 
-		case "mozilla":
+		case "Mozilla":
 			driver = new FirefoxDriver();
 			Log.info("New Firefox driver initiated");
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);

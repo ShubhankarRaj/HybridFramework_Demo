@@ -23,20 +23,14 @@ public class MortgageCalculator_Action {
 		String HomePrice = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_HomePrice, "Sheet1");
 		MortgageCalculator.EnterHomePrice().clear();
 		MortgageCalculator.EnterHomePrice().sendKeys(HomePrice);
-		Log.info(HomePrice+" is entered in Home Price text box" );	
-
+		Log.info(HomePrice+" is entered in Home Price text box" );
 		String DownPayment = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_DownPayment, "Sheet1");
 		MortgageCalculator.EnterDownPayment().clear();
 		MortgageCalculator.EnterDownPayment().sendKeys(DownPayment);
-		Log.info(DownPayment+" is entered in DownPayment text box" );
-		
+		Log.info(DownPayment+" is entered in DownPayment text box" );		
 		String InterestRate = ExcelUtils.getCellData(iTestCaseRow, Constant.Col_MortgageIntRate, "Sheet1");
 		MortgageCalculator.EnterInterestRate().clear();
 		MortgageCalculator.EnterInterestRate().sendKeys(InterestRate);
-		Log.info(InterestRate+" is entered in InterestRate text box" );	
-		
-//		Utils.waitForElement(Home_Page.lnk_LogOut());
-//		Reporter.log("SignIn Action is successfully performed");
-
+		Log.info(InterestRate+" is entered in InterestRate text box" );
 	}
 }

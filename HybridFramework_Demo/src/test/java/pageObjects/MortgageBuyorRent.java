@@ -11,6 +11,7 @@ public class MortgageBuyorRent extends BaseClass{
 	
 	public MortgageBuyorRent(WebDriver driver){
 		super(driver);
+		
 	}
 	//This is just TEST line.
 	public static WebElement txtbx_Location() throws Exception{

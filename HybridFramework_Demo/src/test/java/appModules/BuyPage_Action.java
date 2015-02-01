@@ -6,7 +6,7 @@ import utility.Constant;
 import utility.ExcelUtils;
 public class BuyPage_Action {
 		public static void execute() throws Exception{	
-			///sdfsdfafasdfdsssssssssssssssssssssss
+			///sdfsdfafasdfdssssssssssssssssssssssrrwqewerwqeqwerweq
 			String HomeLocation = ExcelUtils.getCellData(1, Constant.Col_Buy_Location, "Sheet1");
 			//BuyPage.sLocation = BuyPage.txt_Buy_Location().getText();
 			//String owserName;

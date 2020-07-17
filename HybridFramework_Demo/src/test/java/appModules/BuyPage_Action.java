@@ -1,5 +1,14 @@
 package appModules;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashSet;
+import java.util.List;
+import java.util.Set;
+
 import org.testng.Assert;
+
+import com.fasterxml.jackson.core.JsonGenerationException;
+import com.fasterxml.jackson.databind.JsonMappingException;
 
 import pageObjects.BuyPage;
 import utility.Constant;
@@ -29,5 +38,21 @@ public class BuyPage_Action {
 			Thread.sleep(5000);
 			System.out.println("Actual is "+actual);
 			Assert.assertEquals("5,508", actual);
+		}
+		public static void mmain() throws  IOException {
+			
+			//rc.get("https://reqres.in/api/users");
+		List<String> list = new ArrayList<String>();
+		list.add("Amar");
+		list.add("Akbar");
+		list.add("Amar");
+		
+		System.out.println(list);	
+		Set<String> set = new HashSet<String>();
+		set.add("Amar");
+		set.add("Akbar");
+		set.add("Amar");
+		System.out.println(set);
+		
 		}
 }
